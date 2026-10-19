@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Synthetic demonstration results, testing context, limitations and project resources for ATM Sentinel.">
+  <title>Results &amp; Resources | ATM Sentinel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="nav-shell">
+    <a class="brand" href="index.html" aria-label="ATM Sentinel home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>ATM <strong>SENTINEL</strong></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Toggle navigation</span><span class="menu-lines" aria-hidden="true"></span></button>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation"><a href="index.html">Overview</a><a href="system.html">System &amp; technologies</a><a href="results.html" aria-current="page">Results &amp; resources</a><a class="nav-source" href="https://github.com/desire1515/ATM-Sentinel" target="_blank" rel="noopener noreferrer">Source <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="main">
+    <section class="page-hero results-hero"><div class="page-hero-inner"><p class="eyebrow"><span class="status-dot"></span> DEMONSTRATION OUTPUT <span class="eyebrow-divider">/</span> 03</p><h1>Signals to review.<br><span class="text-gradient">Not verdicts.</span></h1><p class="page-lead">A snapshot of the prototype’s synthetic results — presented as a learning demonstration, not as verified banking or fraud statistics.</p><div class="result-stamp"><span class="stamp-icon">i</span><span>50,000 SYNTHETIC TRANSACTIONS <b>·</b> 2025 DEMONSTRATION DATASET</span></div></div></section>
+    <section class="section results-section" aria-labelledby="results-title">
+      <div class="section-heading section-heading-row"><div><p class="eyebrow">01 / RESULTS AT A GLANCE</p><h2 id="results-title">The demonstration snapshot.</h2></div><span class="mono results-period">DATA PERIOD / 2025</span></div>
+      <div class="stat-grid">
+        <article class="stat-card stat-card-total"><span class="stat-label">TOTAL TRANSACTIONS</span><span class="stat-value">50,000</span><span class="stat-detail">Synthetic records in the demonstration dataset</span><span class="stat-card-mark" aria-hidden="true">▤</span></article>
+        <article class="stat-card stat-card-flagged"><span class="stat-label">FLAGGED AS ANOMALOUS</span><span class="stat-value">2,500</span><span class="stat-detail"><strong>5%</strong> of the synthetic dataset</span><span class="stat-card-mark" aria-hidden="true">⌁</span></article>
+        <article class="stat-card"><span class="stat-label">NOT FLAGGED</span><span class="stat-value">47,500</span><span class="stat-detail"><strong>95%</strong> of the synthetic dataset</span><span class="stat-card-mark" aria-hidden="true">✓</span></article>
+      </div>
+      <div class="review-card">
+        <div class="review-card-head"><div><p class="eyebrow">REVIEW TIERS</p><h3>Categories for investigation.</h3></div><p>Counts from the current demonstration output</p></div>
+        <div class="tier-row"><div class="tier-meta"><span><i class="tier-dot tier-high"></i>High-risk review tier</span><strong>500 <small>· 1% of all records</small></strong></div><div class="tier-track"><span class="tier-fill tier-fill-high" style="--fill: 20%"></span></div></div>
+        <div class="tier-row"><div class="tier-meta"><span><i class="tier-dot tier-medium"></i>Medium-risk review tier</span><strong>2,000 <small>· 4% of all records</small></strong></div><div class="tier-track"><span class="tier-fill tier-fill-medium" style="--fill: 80%"></span></div></div>
+        <div class="tier-row"><div class="tier-meta"><span><i class="tier-dot tier-low"></i>Low-risk review tier</span><strong>0 <small>· 0% of all records</small></strong></div><div class="tier-track"><span class="tier-fill tier-fill-low" style="--fill: 0%"></span></div></div>
+        <p class="chart-caption">Bars compare review-tier counts to the 2,500 flagged records. Tiers are review categories, not verified fraud probabilities.</p>
+      </div>
+      <div class="interpretation-note"><span class="note-icon" aria-hidden="true">i</span><p><strong>How to interpret this:</strong> the 2,500 anomaly flags describe the current synthetic demonstration output. An anomaly indicates unusual behaviour relative to the data and model; it does not prove fraud. High-, medium- and low-risk are review categories, not calibrated probabilities of fraud. The separate high-value rule flags withdrawals of <strong>MWK 100,000 or more</strong>.</p></div>
+    </section>
+    <section class="section testing-section" aria-labelledby="testing-title">
+      <div class="section-heading"><p class="eyebrow">02 / TESTING &amp; LIMITATIONS</p><h2 id="testing-title">A prototype, in context.</h2></div>
+      <div class="testing-grid">
+        <article class="testing-card"><span class="testing-symbol" aria-hidden="true">✓</span><h3>What this demonstrates</h3><ul><li>Analysis of a synthetic transaction dataset.</li><li>Precomputed anomaly outputs presented in a dashboard.</li><li>Review-oriented statistics and CSV export capabilities.</li><li>A separate MWK 100,000 withdrawal threshold rule.</li></ul></article>
+        <article class="testing-card testing-card-limit"><span class="testing-symbol" aria-hidden="true">!</span><h3>What it does not claim</h3><ul><li>It is not connected to real banks or live ATM networks.</li><li>It does not prevent fraud in real time.</li><li>It is not a production-deployed banking service.</li><li>Performance on verified, labelled real banking data has not been established.</li></ul></article>
+      </div>
+      <div class="testing-footnote"><span class="mono">TESTING NOTE</span><p>Results are precomputed for this prototype. Synthetic demonstration counts should not be used to infer real-world fraud rates, model accuracy or financial risk.</p></div>
+    </section>
+    <section class="section resources-section" aria-labelledby="resources-title"><div class="section-heading section-heading-row"><div><p class="eyebrow">03 / PROJECT RESOURCES</p><h2 id="resources-title">Go deeper into the project.</h2></div><span class="mono">SOURCE / GITHUB</span></div>
+      <div class="resource-list">
+        <a class="resource-link" href="https://github.com/desire1515/ATM-Sentinel" target="_blank" rel="noopener noreferrer"><span class="resource-icon" aria-hidden="true">⌘</span><span class="resource-copy"><strong>Project source repository</strong><small>Source code, project folders and documentation</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+        <a class="resource-link" href="https://github.com/desire1515/ATM-Sentinel/blob/main/README.md" target="_blank" rel="noopener noreferrer"><span class="resource-icon" aria-hidden="true">▤</span><span class="resource-copy"><strong>Setup instructions &amp; README</strong><small>Requirements, local setup, workflow and limitations</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+        <a class="resource-link" href="https://github.com/desire1515/ATM-Sentinel/tree/main/dataset" target="_blank" rel="noopener noreferrer"><span class="resource-icon" aria-hidden="true">▦</span><span class="resource-copy"><strong>Dataset &amp; validation documentation</strong><small>Synthetic CSV dataset and dataset validation notes</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+        <a class="resource-link" href="https://github.com/desire1515/ATM-Sentinel/blob/main/dataset/atm_transactions_malawi_synthetic.csv" target="_blank" rel="noopener noreferrer"><span class="resource-icon" aria-hidden="true">CSV</span><span class="resource-copy"><strong>Demonstration dataset CSV</strong><small>atm_transactions_malawi_synthetic.csv</small></span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section class="closing-cta"><div><p class="eyebrow">END / PROJECT OVERVIEW</p><h2>Return to the project story.</h2></div><div class="cta-actions"><a class="button button-primary" href="index.html">Home overview <span aria-hidden="true">→</span></a><a class="button button-secondary" href="system.html">System &amp; technologies</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-main"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>ATM <strong>SENTINEL</strong></span></a><p>An academic prototype for exploring ATM transaction anomaly detection.</p><nav aria-label="Footer navigation"><a href="index.html">Overview</a><a href="system.html">System</a><a href="results.html" aria-current="page">Results</a><a href="https://github.com/desire1515/ATM-Sentinel" target="_blank" rel="noopener noreferrer">Source repository ↗</a></nav></div><div class="footer-bottom"><span>ATM SENTINEL · ACADEMIC PROJECT</span><span>SYNTHETIC DATA · HUMAN REVIEW</span></div></footer>
+</body>
+</html>
